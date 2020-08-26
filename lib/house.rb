@@ -21,4 +21,18 @@ attr_reader :price, :address, :rooms
       false
     end
   end
+
+  def rooms_from_category
+  end
+
+  def area
+    room.each do |room|
+      room += room.area
+    end
+  end
+
+  def details
+    :price + :address
+  end
+
 end
