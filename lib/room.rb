@@ -12,7 +12,7 @@ class Room
   end
 
   def is_painted?
-    false
+    falsegit
   end
 
   def paint
