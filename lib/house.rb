@@ -13,4 +13,12 @@ attr_reader :price, :address, :rooms
   def add_room(room)
     rooms << room
   end
+
+  def above_market_average?
+    if @price >= 500000
+      true
+    else
+      false
+    end
+  end
 end
